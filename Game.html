@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<script>
+var stock = prompt ('heeft het wapen een schouderstock');
+if (stock == 'ja') {
+  var pistolammo = prompt ('vuurt het wapen pistool patronen');
+  if (pistolammo == 'ja') {
+  }else{
+    var sround = prompt ('vuurt het wapen .338 of groter');
+    if (sround == 'ja'){
+      var kill = prompt ('is het wapen gemaakt om te killen');
+      if (kill == 'ja'){
+        alert ('jouw wapen is een sniper rifle');
+      }else{
+        alert ('jouw wapen is een anti material sniper rifle');
+      }
+
+    }else{
+      var belt = prompt ('heeft jouw wapen een ammobelt');
+      if (belt == 'ja') {
+        alert ('jouw wapen is een machinegeweer');
+
+    }else{
+      var rusische = prompt ('is het wapen van een rusische fabrikant');
+      if (rusische == 'ja') {
+        alert ('jouw wapen is een ak47, mosin negant, aks, etc');
+        }else{
+          alert ('jouw wapen in een m4, m16, etc');
+      }
+
+      }
+  }
+  }
+    var firemode = prompt ('wat is de vuur mode (semi/auto)');
+    if (firemode == 'semi') {
+    alert ('jouw wapen is een cz scorpion evo 3');
+  }else{
+    var mag = prompt ('heeft het wapen een recht of krom magazijn')
+    if (mag == 'recht') {
+      alert ('jouw wapen is een arp9, kriss vector, etc')
+    }else{
+      alert ('jouw wapen is een mp5, mp7, uzi, etc')
+    }
+  }
+}else{
+    var mode = prompt ('wat is de vuur mode (semi/auto)');
+    if (mode == 'single') {
+    alert ('jouw wapen is een revolver');
+  }else{
+      var cal = prompt ('is het caliber 9mm of kleiner');
+      if (cal == 'ja') {
+      alert ('jouw wapen is een pistol zoals een glock');
+    }else{
+        alert ('jouw wapen is een Desert Eagle')
+      }
+    }
+}
+
+
+
+
+
+</script>
