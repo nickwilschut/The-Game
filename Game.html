@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<html>
 
 <script>
 var stock = prompt ('heeft het wapen een schouderstock');
@@ -11,48 +10,97 @@ if (stock == 'ja') {
     if (sround == 'ja'){
       var kill = prompt ('is het wapen gemaakt om te killen');
       if (kill == 'ja'){
-        alert ('jouw wapen is een sniper rifle');
-      }else{
-        alert ('jouw wapen is een anti material sniper rifle');
-      }
+        var killsniper = prompt ('jouw wapen is een sniper rifle, klopt dit?');
+        if (killsniper == 'ja'){
+        	alert('je hebt gewonnen');
+        }else if(alert ('jammer, je bent dood'));
 
+
+      }
+      	if (kill = 'nee')
+        var antimatsniper = prompt ('jouw wapen is een anti material sniper rifle, klopt dit?');
+        if (antimatsniper == 'ja'){
+        	alert('je hebt gewonnen');
+        }else if(alert ('jammer, je bent dood'));
+      
     }else{
       var belt = prompt ('heeft jouw wapen een ammobelt');
       if (belt == 'ja') {
-        alert ('jouw wapen is een machinegeweer');
+        var machinegeweer = prompt ('jouw wapen is een machinegeweer, klopt dit?');
+        if (machinegeweer == 'ja'){
+        	alert('je hebt gewonnen');
+        }else if(alert('jammer, je bent dood'));
+
 
     }else{
       var rusische = prompt ('is het wapen van een rusische fabrikant');
       if (rusische == 'ja') {
-        alert ('jouw wapen is een ak47, mosin negant, aks, etc');
-        }else{
-          alert ('jouw wapen in een m4, m16, etc');
-      }
+        var akfam = prompt ('jouw wapen is een ak47, mosin negant, aks, etc, klopt dit?');
+        if (akfam == 'ja'){
+        	alert('je hebt gewonnen');
+        }else if(alert('jammer, je bent dood'));
 
-      }
+
+
+        }else{
+          var m4fam = prompt ('jouw wapen in een m4, m16, etc, klopt dit?');
+          if (m4fam == 'ja'){
+          	alert('je hebt gewonnen');
+          }else if(alert('jammer, je bent dood'));
+      	}
+
+    }
+    }
   }
-  }
-    var firemode = prompt ('wat is de vuur mode (semi/auto)');
+    var firemode = prompt ('wat is de vuur mode (semi/single)');
     if (firemode == 'semi') {
-    alert ('jouw wapen is een cz scorpion evo 3');
+    	var scorpion = prompt ('jouw wapen is een cz scorpion evo 3, klopt dit?');
+  		if(scropion == 'ja'){
+  			alert('je hebt gewonnen');
+  		}else if(alert('jammer, je bent dood'));
+
+
+
+
   }else{
     var mag = prompt ('heeft het wapen een recht of krom magazijn')
     if (mag == 'recht') {
-      alert ('jouw wapen is een arp9, kriss vector, etc')
+      var machinepistolrecht = prompt ('jouw wapen is een arp9, kriss vector, etc, klopt dit?');
+      if(machinepistolrecht == 'ja'){
+      	alert('je hebt gewonnen');
+      }else if(alert('jammer, je bent dood'));
+
     }else{
-      alert ('jouw wapen is een mp5, mp7, uzi, etc')
+      var machinepistolkrom = prompt ('jouw wapen is een mp5, mp7, uzi, etc, klopt dit?');
+      if(machinepistolkrom == 'ja'){
+      	alert('je hebt gewonnen')
+      }else if(alert('jammer, je bent dood'));
     }
   }
+
+
 }else{
-    var mode = prompt ('wat is de vuur mode (semi/single)');
+    var mode = prompt ('wat is de vuur mode (semi/auto)');
     if (mode == 'single') {
-    alert ('jouw wapen is een revolver');
+    	var revolver = prompt ('jouw wapen is een revolver, klopt dit?');
+    	if (revolver == 'ja'){
+    		alert('je hebt gewonnen');
+    	}else if(alert('jammer, je bent dood'));
+
   }else{
       var cal = prompt ('is het caliber 9mm of kleiner');
       if (cal == 'ja') {
-      alert ('jouw wapen is een pistol zoals een glock');
+      var pistol = prompt ('jouw wapen is een pistol zoals een glock, klopt dit?');
+      if (pistol == 'ja'){
+      	alert('je hebt gewonnen');
+      }else if(alert('jammer, je bent dood'));
+
     }else{
-        alert ('jouw wapen is een Desert Eagle')
+        var Deagle = prompt ('jouw wapen is een Desert Eagle');
+        if (Deagle == 'ja'){
+        	alert('je hebt gewonnen');
+        }else if(alert('jammer, je bent dood'));
+
       }
     }
 }
@@ -62,5 +110,3 @@ if (stock == 'ja') {
 
 
 </script>
-
-</html>s
